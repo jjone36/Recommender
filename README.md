@@ -3,6 +3,8 @@
 
 This course provides the in-depth course on recommendation systems in python. It consists of the Ranking Systems with non-personalization, Collaborative Filtering from scratch, Matrix Factorization and Deep Learning.  
 
+<br>
+<br>
 
 > 1. Basic Ranking systems
 
@@ -26,6 +28,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 - [Markov Chains Explained Visually](http://setosa.io/ev/markov-chains/)
 
+<br>
 
 > 2. Collaborative filtering
 
@@ -35,6 +38,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 - [Item-based collaborative filtering recommendation algorithms](https://dl.acm.org/citation.cfm?id=372071)
 
+<br>
 
 > 3. Matrix Factorization
 
