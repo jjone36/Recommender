@@ -3,9 +3,8 @@
 
 This course provides the in-depth course on recommendation systems in python. It consists of the Ranking Systems with non-personalization, Collaborative Filtering from scratch, Matrix Factorization and Deep Learning.  
 
-<br>
 
-### 1. Basic Ranking systems
+> 1. Basic Ranking systems
 
 - [How Hacker News ranking really works: scoring, controversy, and penalties](http://www.righto.com/2013/11/how-hacker-news-ranking-really-works.html)
 
@@ -27,9 +26,8 @@ This course provides the in-depth course on recommendation systems in python. It
 
 - [Markov Chains Explained Visually](http://setosa.io/ev/markov-chains/)
 
-<br>
 
-### 2. Collaborative filtering
+> 2. Collaborative filtering
 
 - [**Course Note code**](https://github.com/jjone36/Recommender/blob/master/1_Collaborative.ipynb)
 
@@ -37,9 +35,8 @@ This course provides the in-depth course on recommendation systems in python. It
 
 - [Item-based collaborative filtering recommendation algorithms](https://dl.acm.org/citation.cfm?id=372071)
 
-<br>
 
-### 3. Matrix Factorization
+> 3. Matrix Factorization
 
 - **Course Note code** [**from scratch**](https://github.com/jjone36/Recommender/blob/master/2_MF.ipynb) **and** [**with Keras**](https://github.com/jjone36/Recommender/blob/master/3_MF_Keras.ipynb)
 
