@@ -1,13 +1,15 @@
 
 import pandas as pd
 import numpy as np
+import pickle
 
 from collections import Counter
 from sklearn.utils import shuffle
 
+dir = '../'
 
-rt = pd.read_csv('data/rating.csv')
-mo = pd.read_csv('data/movie.csv')
+rt = pd.read_csv(dir + 'data/rating.csv')
+mo = pd.read_csv(dir + 'data/movie.csv')
 
 # Step 1. Joing the two data frame
 df = pd.merge(rt, mo, how = 'inner', on = ['movieId'])
@@ -28,8 +30,8 @@ movie_ids_count = Counter(df.movieId)
 
 
 # Step 3. Choose the numbers to subset
-n = 10000
-m = 2000
+n = 1000
+m = 200
 
 user_ids = [col for col, idx in user_ids_count.most_common(n)]
 movie_ids = [col for col, idx in movie_ids_count.most_common(m)]
@@ -105,7 +107,7 @@ def making_user_movie_dics_train(row):
 
 # Apply the function
 _ = tr.apply(making_user_movie_dics_train, axis = 1)
-
+print("train set done")
 
 # Step 7. Create user, movie look-up dictionary with test set
 um_to_rating_te = {}
@@ -127,17 +129,18 @@ def making_user_movie_dics_test(x):
         print("==========Processed: %.2f" % (count/len(te)))
 
 _ = te.apply(making_user_movie_dics_test, axis = 1)
-
+print("test set done")
 
 # Step 8. Save the dictionary files
-with open('user_to_movie.json', 'wb') as f:
+print("Saving...")
+with open(dir + 'data/user_to_movie.json', 'wb') as f:
   pickle.dump(user_to_movie, f)
 
-with open('movie_to_user.json', 'wb') as f:
+with open(dir + 'data/movie_to_user.json', 'wb') as f:
   pickle.dump(movie_to_user, f)
 
-with open('um_to_rating_tr.json', 'wb') as f:
+with open(dir + 'data/um_to_rating_tr.json', 'wb') as f:
   pickle.dump(um_to_rating_tr, f)
 
-with open('um_to_rating_te.json', 'wb') as f:
+with open(dir + 'data/um_to_rating_te.json', 'wb') as f:
   pickle.dump(um_to_rating_te, f)

@@ -5,17 +5,19 @@ import pickle
 
 from sortedcontainers import SortedList
 
+dir = '../'
+
 # Load the data
-with open('user_to_movie.json', 'rb') as f:
+with open(dir + 'data/user_to_movie.json', 'rb') as f:
     user_to_movie = pickle.load(f)
 
-with open('movie_to_user.json', 'rb') as f:
+with open(dir + 'data/movie_to_user.json', 'rb') as f:
     movie_to_user = pickle.load(f)
 
-with open('um_to_rating_tr.json', 'rb') as f:
+with open(dir + 'data/um_to_rating_tr.json', 'rb') as f:
     um_to_rating_tr = pickle.load(f)
 
-with open('um_to_rating_te.json', 'rb') as f:
+with open(dir + 'data/um_to_rating_te.json', 'rb') as f:
     um_to_rating_te = pickle.load(f)
 
 
