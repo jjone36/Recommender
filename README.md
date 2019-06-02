@@ -32,7 +32,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 ### 2. Collaborative filtering
 
-- [**Course Note code**](https://github.com/jjone36/Recommender/blob/master/1_Collaborative.ipynb)
+- **Course Note code** [from scratch](https://github.com/jjone36/Recommender/blob/master/01.Collaborative_Filtering/Collaborative_Filtering.ipynb)
 
 - [An algorithmic framework for performing collaborative filtering](https://dl.acm.org/citation.cfm?id=312682)
 
@@ -42,7 +42,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 ### 3. Matrix Factorization
 
-- **Course Note code** [**from scratch**](https://github.com/jjone36/Recommender/blob/master/2_MF.ipynb) **and** [**with Keras**](https://github.com/jjone36/Recommender/blob/master/3_MF_Keras.ipynb)
+- **Course Note code** [from scratch](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic.py) and [faster one with numpy](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic2.py). Matrix Factorization with [Keras]((https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_nn.py) and [Spark](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_spark.py)
 
 - [FunkSVD](http://sifter.org/~simon/journal/20061211.html)
 
@@ -60,6 +60,14 @@ This course provides the in-depth course on recommendation systems in python. It
 
 <br>
 
-### 4. Restricted Boltzmann Machines
+### 4. Neural Networks
+
+- **Course Note code** [Deep neural networks](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\01.Deep.py), [using ResNet structure](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\02.Residual.py) and [AutoRec](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\03.AutoRec.py)
+
+<br>
+
+### 5. Restricted Boltzmann Machines
+
+- **Course Note code** [from scratch](https://github.com/jjone36/Recommender/blob/master/04.RBMs/01.rbm_tf_k.py)
 
 - [Restricted Boltzmann Machines for Collaborative Filtering](https://www.cs.toronto.edu/~rsalakhu/papers/rbmcf.pdf)

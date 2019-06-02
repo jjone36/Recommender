@@ -7,7 +7,6 @@ from collections import Counter
 from sklearn.utils import shuffle
 
 dir = '../'
-
 rt = pd.read_csv(dir + 'data/rating.csv')
 mo = pd.read_csv(dir + 'data/movie.csv')
 
