@@ -4,7 +4,6 @@
 This course provides the in-depth course on recommendation systems in python. It consists of the Ranking Systems with non-personalization, Collaborative Filtering from scratch, Matrix Factorization and Deep Learning.  
 
 <br>
-<br>
 
 ### 1. Basic Ranking systems
 
@@ -42,7 +41,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 ### 3. Matrix Factorization
 
-- **Course Note code** [from scratch](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic.py) and [faster one with numpy](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic2.py). Matrix Factorization with [Keras]((https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_nn.py) and [Spark](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_spark.py)
+- **Course Note code** [from scratch](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic.py) and [faster one with numpy](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/01.MF_basic2.py). Matrix Factorization with [Keras](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_nn.py) and [Spark](https://github.com/jjone36/Recommender/blob/master/02.Matrix_Factorization/02.MF_spark.py)
 
 - [FunkSVD](http://sifter.org/~simon/journal/20061211.html)
 
@@ -62,7 +61,7 @@ This course provides the in-depth course on recommendation systems in python. It
 
 ### 4. Neural Networks
 
-- **Course Note code** [Deep neural networks](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\01.Deep.py), [using ResNet structure](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\02.Residual.py) and [AutoRec](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\03.AutoRec.py)
+- **Course Note code** [Deep neural networks](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\01.Deep.py), [ResNet structure](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\02.Residual.py) and [AutoRec](https://github.com/jjone36/Recommender/blob/master/03.Neural_Network\03.AutoRec.py)
 
 <br>
 

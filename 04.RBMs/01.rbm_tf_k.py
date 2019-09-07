@@ -54,22 +54,22 @@ def convert_probs_to_ratings(pred):
 # customed dot functions
 def dot_1(V, W):
     '''
-    input - V: k batch of visible units with the shape of (N, D, K)
-          - W: parameters with the shape of (D, K, M)
+    input- V: k batch of visible units with the shape of (N, D, K)
+         - W: parameters with the shape of (D, K, M)
     output: the output with the shape of (N, M)
     '''
     return tf.tensordot(V, W, axes = [[1, 2], [0, 1]])
 
 def dot_2(H, W):
     '''
-    input - V: the hidden units with the shape of (N, M)
-          - W: parameters with the shape of (D, K, M)
+    input- V: the hidden units with the shape of (N, M)
+         - W: parameters with the shape of (D, K, M)
     output: the output with the shape of (N, D, K)
     '''
     return tf.tensordot(H, W, axes = [[1], [2]])
 
 
-# Create the RBM class 
+# Create the RBM class
 class RBM(object):
     def __init__(self, D, M, K):
         self.D = D  # input size
@@ -111,12 +111,7 @@ class RBM(object):
         # we won't use this to optimize the model parameters
         # just to observe what happens during training
         logits = self.forward_logits(self.X_in)
-        self.cost = tf.reduce_mean(
-            tf.nn.softmax_cross_entropy_with_logits(
-                labels=self.X_in,
-                logits=logits,
-            )
-        )
+        self.cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=self.X_in, logits=logits))
 
         # to get the output
         self.output_visible = self.forward_output(self.X_in)
